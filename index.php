@@ -37,7 +37,23 @@ $petName = 'Barsik';
 $person['car'] = 'Toyota'; // add an item to the array
 $person['hobby'] = 'gym'; // edit an item to the array
 unset($person['car']); // delete an item to the array
-print_r($person);
+
+foreach ($person as $key => $item) {
+    echo $key . ': ';
+    echo $item . "\n";
+}
+
+foreach ($person2 as $key => $item) {
+    echo $key . ': ';
+    echo $item . "\n";
+}
+
+foreach ($person3 as $key => $item) {
+    echo $key . ': ';
+    echo $item . "\n";
+}
+
+//print_r($person3);
 
 //echo $name . "\n";
 //echo $age . "\n";
