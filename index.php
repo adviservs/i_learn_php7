@@ -28,18 +28,31 @@ $persons = [
     ]
 ];
 
-foreach ($persons as $person) {
-    if ($person['isMarried']) {
-        print_r($person['name'] . "\n");
-    } else {
-        echo 'Not married' . "\n";
-    }
-}
+//foreach ($persons as $person) {
+//    if ($person['isMarried']) {
+//        print_r($person['name'] . "\n");
+//    } else {
+//        echo 'Not married' . "\n";
+//    }
+//}
 
+$flat = '20';
 $name = 'Mark';
-$age = 0;
+$age = 20;
+$some = null;
 
-if ($name) {
+// ==
+// ===
+// &&
+// ||
+// !
+// >
+// <
+// >=
+// >=
+
+
+if ($flat >= 20 && $flat === 20) {
     echo 'Yes';
 } else {
     echo 'No';
