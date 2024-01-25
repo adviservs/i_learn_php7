@@ -8,14 +8,15 @@ function sayHello()
     echo $name;
 }
 
-function sum()
+//sayHello();
+
+function sum($a, $b)
 {
-    $sum = 5 + 15;
+    $sum = $a + $b;
     echo $sum;
 }
 
-sayHello();
-sum();
+sum(5, 15);
 
 //echo $name . "\n";
 //echo $age . "\n";
