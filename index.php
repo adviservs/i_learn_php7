@@ -5,7 +5,7 @@ $persons = [
         'name' => 'Viktor',
         'age' => 20,
         'hobby' => 'swimming',
-        'isMarried' => true,
+        'isMarried' => false,
         'pet' => 'cat',
         'pet_name' => 'Barsik',
         'cars' => ['toyota', 'mazda', 'lexus']
@@ -29,7 +29,20 @@ $persons = [
 ];
 
 foreach ($persons as $person) {
-    print_r($person['name'] . "\n");
+    if ($person['isMarried']) {
+        print_r($person['name'] . "\n");
+    } else {
+        echo 'Not married' . "\n";
+    }
+}
+
+$name = 'Mark';
+$age = 0;
+
+if ($name) {
+    echo 'Yes';
+} else {
+    echo 'No';
 }
 
 // add an item to the array
