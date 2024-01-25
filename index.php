@@ -10,13 +10,36 @@ function sayHello()
 
 //sayHello();
 
-function sum($a, $b)
+// Sum Сумма
+function getSum($a, $b)
 {
     $sum = $a + $b;
-    echo $sum;
+    return $sum;
 }
 
-sum(5, 15);
+// subtraction function вычитание
+function getSubtraction($a, $b)
+{
+    $sum = $a - $b;
+    return $sum;
+}
+
+// multiplication function умножения
+function getMultiplication($a, $b)
+{
+    $sum = $a * $b;
+    return $sum;
+}
+
+// Fission Деление
+function getFission($a, $b)
+{
+    $sum = $a / $b;
+    return $sum;
+}
+
+$result = getSubtraction(50, 10);
+echo $result + 5;
 
 //echo $name . "\n";
 //echo $age . "\n";
